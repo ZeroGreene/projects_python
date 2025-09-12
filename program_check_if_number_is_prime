@@ -1,3 +1,8 @@
+#programmer: Zero Greene
+#company: Greene Aeration
+
+#~~~Beginning of code~~~
+
 def is_prime(n):
     if n <= 1:
         return False
@@ -24,3 +29,5 @@ while True:
         print(f"{num} is a prime number.")
     else:
         print(f"{num} is not a prime number.")
+
+#~~~End of code~~~
