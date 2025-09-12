@@ -1,0 +1,24 @@
+In Python, the double asterisk (**) has two primary uses:
+Exponentiation Operator: When used between two numbers, ** performs exponentiation, raising the number on the left to the power of the number on the right.
+Python
+
+    result = 2 ** 3  # This calculates 2 to the power of 3, which is 8
+    print(result)
+Handling Keyword Arguments in Function Definitions and Calls:
+In Function Definitions (`: kwargs`):** When defining a function, **kwargs (or any other name preceded by **) allows the function to accept an arbitrary number of keyword arguments. These arguments are then collected into a dictionary within the function, where the argument names become keys and their values become dictionary values.
+Python
+
+        def my_function(**kwargs):
+            print(kwargs)
+
+        my_function(name="Alice", age=30, city="New York")
+        # Output: {'name': 'Alice', 'age': 30, 'city': 'New York'}
+In Function Calls (Unpacking Dictionaries): When calling a function, ** can be used to unpack a dictionary into keyword arguments. The keys of the dictionary become the argument names, and their corresponding values become the argument values.
+Python
+
+        def greet(name, age):
+            print(f"Hello, {name}! You are {age} years old.")
+
+        person_info = {"name": "Bob", "age": 25}
+        greet(**person_info)
+        # Output: Hello, Bob! You are 25 years old.
