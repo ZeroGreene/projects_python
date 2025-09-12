@@ -15,7 +15,8 @@ def is_prime(n):
     return True
 #~~~~~end of def is_prime(n):~~~~~
 
-# Main program loop
+#~~~~~Beginning of main program loop~~~~
+
 while True:
     user_input = input("Please type a number to check if it's prime, enter to compute. Type 'exit' to quit: ")
     
@@ -33,5 +34,7 @@ while True:
         print(f"{num} is a prime number.")
     else:
         print(f"{num} is not a prime number.")
+
+#~~~~~End of main program loop~~~~
 
 #~~~End of code~~~
