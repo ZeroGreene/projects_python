@@ -3,14 +3,17 @@
 
 #~~~Beginning of code~~~
 
+#~~~~~beginning of def is_prime(n):~~~~~
 def is_prime(n):
     if n <= 1: #2 is the smallest prime integer
         return False #false = not a prime
 
     for i in range(2, int(n ** 0.5) + 1):
-        if n % i == 0:
+        if n % i == 0: #no remainder
             return False 
+
     return True
+#~~~~~end of def is_prime(n):~~~~~
 
 # Main program loop
 while True:
