@@ -1,18 +1,21 @@
 #programmer: Zero Greene
 #company: Greene Aeration
+#compiler: https://www.online-python.com/
 
 #~~~Beginning of code~~~
 
 #~~~~~beginning of def is_prime(n):~~~~~
 def is_prime(n):
-    if n <= 1: #2 is the smallest prime integer
-        return False #false = not a prime
+    if n <= 1: 
+        return False #2 is the smallest prime integer so anything lower is automatically labelled not prime
 
     for i in range(2, int(n ** 0.5) + 1):
-        if n % i == 0: #no remainder
-            return False 
+        #n ** 0.5 gets the square root, so the int converts the answer to an integer, the +1 because python loops are exclusive
 
-    return True
+        if n % i == 0: 
+            return False #if no remainder, its not a prime number
+
+    return True #it passed all of our current tests, so we're labelling it prime
 #~~~~~end of def is_prime(n):~~~~~
 
 #~~~~~Beginning of main program loop~~~~
