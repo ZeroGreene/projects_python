@@ -18,12 +18,16 @@ def is_prime(n):
 #~~~~~Beginning of main program loop~~~~
 
 while True:
-    user_input = input("Please type a number to check if it's prime, enter to compute. Type 'exit' to quit: ")
-    
+
+    #asking for input and putting it in a variable
+    user_input = input("Please type a number to check if it's prime, enter to compute. Type 'exit' to quit: ") 
+
+    #if they enter the quit/exit word
     if user_input.lower() == 'exit':
         print("Thanks for stopping by")
         break
 
+    #response if the input is not a positive integer
     if not user_input.isdigit():
         print("Please enter a valid positive integer.")
         continue
