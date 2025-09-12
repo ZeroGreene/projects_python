@@ -36,7 +36,7 @@ while True:
 
 #~~Beginning of outputs~~
     if is_prime(num):
-        print(f"{num} is a prime number.")
+        print(f"{num} is a prime number.") #The f before the string stands for formatted string literal, or f-string, and it's used to embed variables or expressions inside a string.
     else:
         print(f"{num} is not a prime number.")
 #~~End of outputs~~
