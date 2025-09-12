@@ -30,14 +30,16 @@ while True:
     #response if the input is not a positive integer
     if not user_input.isdigit():
         print("Please enter a valid positive integer.")
-        continue
+        continue #goes to the next step in the loop, in this case asking for input again
 
-    num = int(user_input)
+    num = int(user_input) #It converts the input string from the user (which is always a string by default) into an integer.
 
+#~~Beginning of outputs~~
     if is_prime(num):
         print(f"{num} is a prime number.")
     else:
         print(f"{num} is not a prime number.")
+#~~End of outputs~~
 
 #~~~~~End of main program loop~~~~
 
