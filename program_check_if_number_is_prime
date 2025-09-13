@@ -1,6 +1,7 @@
 #programmer: Zero Greene
 #company: Greene Aeration
 #compiler: https://www.online-python.com/
+#program purpose: take in user numbers and tell them if they are prime or not until they want to quit
 
 #~~~Beginning of code~~~
 
@@ -10,7 +11,7 @@ def is_prime(n):
         return False #2 is the smallest prime integer so anything lower is automatically labelled not prime
 
     for i in range(2, int(n ** 0.5) + 1):
-        #the range is for divisors for the test
+        #the range is for finding divisors for the test
         #n ** 0.5 gets the square root, so the int converts the answer to an integer, the +1 because python loops are exclusive
         #+1 is added because range() in Python is exclusive at the end.
         #so end of the divisor hunt is = 2, through all the integers up to and including the square root
